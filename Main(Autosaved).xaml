@@ -1,0 +1,592 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1540,11589.000000000002" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Triggers</x:String>
+      <x:String>UiPath.Platform.Triggers.Scope</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Core.Activities.Orchestrator</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>GlobalVariablesT1PNoYwrqg</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1550,11404" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="ui:UiElement" Name="applicationAxInstance" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1488,143" sap2010:WorkflowViewState.IdRef="LogMessage_19" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Start Process&quot;]" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: ‪Microsoft Dynamics AX‬ - ‎‪PT Siloam International‬ [‎‪HO-ERPTEST-04‬‪: ‎‪Session " sap:VirtualizedContainerService.HintSize="1488,11110" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" ScopeGuid="c83a4896-b48b-4103-a0cb-9b8ce8dc1ba3" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1454,10817" sap2010:WorkflowViewState.IdRef="Sequence_4">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="s:String[]" Default="[{&quot;5001&quot;, &quot;2005&quot;}]" Name="Units" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="1392,348" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,269" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c83a4896-b48b-4103-a0cb-9b8ce8dc1ba3" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="40, 122, 88, 26" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='2' title='OK' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='2' title='OK' check:text='unchecked' /&gt;" Guid="8fe78d7c-a006-4e6b-a203-5a9b3da06cf5" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAeCAYAAAChf3k/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEYSURBVGhD7dbBEYMgEIVheqIbKsmNVmiFKnK2AzrYiGhkxcyYUVd25h3+A7qnT0RNSomQXAAXDuDCMXDzeqMbYsZssTOMzseM2WIeGIYBXRDAhQO4cAAXDuDC6QQPjowx36yP1f1AzljycVlH8nacc6GaeS594BN2C7qic/Dgtg/k2ZSBF1wXNtejJ2schWm9gkdvu9nZS7rAGWxdfhDLrp7B/fgmWE+xmX02feC7iPXOz+DlbG/ehA7SB350h4c8u1zrJ13gf57h5QO794CeSxn4WINYjpBffynTh7Ojs1wfeG7zH853PAfP5V/DXtB1gisO4MIBXDiACwdw4QAu3GFwdG3MmC12htH5mHG9QPcHcOEALlqiDyd/APL6OyhdAAAAAElFTkSuQmCC" InformativeScreenshot="f63981bf3c4a890a6300b45685a6351f.png" ScopeSelectorArgument="&lt;wnd app='ax32.exe' cls='#32770' title='Message' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="68, 60, 42, 17" ElementType="Text" FriendlyName="'RollOut'" FullSelectorArgument="&lt;wnd ctrlid='65535' title='RollOut' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='65535' title='RollOut' check:text='RollOut' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC4AAAAVCAYAAAA5BNxZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAELSURBVFhH7ZTRDYQgDECZi4GYh2lYhmF6FlTa0iLnB4kJL7kcCrSPAjr4KFt8NVt8NUQ8QXAOHPmFdHYNwXkeYpbtkxRYTM863yPESdKSMBxvnxiIlxh0IRmin5VXikCwxR8mNizxKtntWo7g/y5Iz7jiPh7pT0pC7RgZ4qYgLkgZX7ie8b/lcsqZtc84G1z77ldFSktO2jiGLvyG7gSdixixFPSKy2op1UtBSz6IcTNTcdnuMY9Kjr5dojfirLIEFkvKWbF6Ji8ntuVR0ZKLGN2XqcZpXxWxOPYVErEEA3H08+2CFtnrDtBxA3GkyLS70+0A7Q+Bzcddre/lJCb+Lbb4arb4arb4WgB+qzvF8damb7oAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1392,145" sap2010:WorkflowViewState.IdRef="LogMessage_20" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Start Looping&quot;]" />
+            <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1392,9943" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[Units]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="x:String">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:String" Name="unit" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1358,9755" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <Sequence.Variables>
+                      <Variable x:TypeArguments="x:Boolean" Default="True" Name="isErrorConnection" />
+                      <Variable x:TypeArguments="x:Int32" Name="tryExport">
+                        <Variable.Default>
+                          <Literal x:TypeArguments="x:Int32" />
+                        </Variable.Default>
+                      </Variable>
+                    </Sequence.Variables>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1316,145" sap2010:WorkflowViewState.IdRef="LogMessage_21" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Looping for unit:&quot; &amp; unit]" />
+                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[isErrorConnection and tryExport &lt; 10]" DisplayName="While" sap:VirtualizedContainerService.HintSize="1316,4025" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_6">
+                      <ui:InterruptibleWhile.Body>
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1158,3857" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1096,145" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Try for : &quot; &amp; tryExport &amp; &quot;Times&quot;]" />
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1096,145" sap2010:WorkflowViewState.IdRef="LogMessage_22" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Type into ax32.exe&quot; &amp; unit]" />
+                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1096,219" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="c83a4896-b48b-4103-a0cb-9b8ce8dc1ba3" Text="[unit &amp; &quot;/Covering Letter/Area page&quot;]" Version="V3">
+                            <uix:NTypeInto.Target>
+                              <uix:TargetAnchorable DesignTimeRectangle="88, 37, 1840, 25" DesignTimeScaleFactor="1" ElementType="Toolbar" FriendlyName="'2005/Covering Letter/Ar…'" FullSelectorArgument="&lt;wnd cls='WindowsForms10.Window.*' idx='76' /&gt;" FuzzySelectorArgument="&lt;wnd cls='WindowsForms10.Window.*' check:text='2005/Covering Letter/Area page' /&gt;" Guid="6e938216-f5e4-41c2-9b78-8873774daefc" ImageBase64="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" InformativeScreenshot="4a9cd2a7253683b2ca43e7364dadabe5.png" ScopeSelectorArgument="&lt;wnd app='ax32.exe' cls='AxMainFrame' title='‪Microsoft Dynamics AX‬ - ‎‪PT Siloam International‬ [‎‪HO-ERPTE*' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target DesignTimeRectangle="8, 67, 65, 24" FriendlyName="'File'" FullSelectorArgument="&lt;wnd cls='WindowsForms10.Window.*' idx='80' /&gt;" FuzzySelectorArgument="&lt;wnd cls='WindowsForms10.Window.*' check:text='File' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEUAAAAcCAYAAAA3DHIWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKESURBVFhH7ZX/SxNhHMf7T/otkzAqyKBklJisQiKICKEfCiMoEGOhJKtpyqo1SIMQIqvVv2CEFWurWBQT45yzlXmuiKDwF/sisi/vns/uHrrb3XNtJ2jw7AMvfHjuc8r7xZtzHR+wWViqQehK/kopFovS/9SVaFIWl+WGpBC6Ek3Kem9EWhaXtabkcjmzlAZvN5rbB9A2+E4aKC/lJjH5fN7aFFpo9E1Ix/5+pSTF9puy15/E1s6EdFBuLsXalPMJNJyOSQfl5lJodCWaFM+5GOpPjksH5SYp/N+yrkSTsqvrCTYcH5MOys2lWL4pTWefou7EQxdMIkq/wDDqWBx1gQ9Q8QO3A3yHn/8vKLewKR5fFPUdj6pmY4cWeLTP/jlRyc5aQblJCgmxNGV3dxybTj12gYJn+InRS3bPOJXsrA2UW9iU5t6X2Hwm6oIUYizwnaDTfdlOUMU8/dHSfIPf9N7qQrm5FEtTWvyvsKUz7oI0C2yeWITf/8LdK05nRuQ75seT2rlKnMZu3w7KLWxK68XX2Nb1wgUziLOQ90JO94ZzKGtoiT7KTNm7lWM3dnsiKLewKfv6k9juS7ggwwL/RiTsdG84hz8jiwX0mXZXhnHsnjtBuUkKjaUpBwYnsaPnTdU09syywEu4PyS+t56BbHTKtL9SaOzu/wXlFjal7bKCnb0TLpjDcxb4wbDTfdnO8FfWFsNMzxneW10ot/CbcjA0jaYLb6WDcgubciichiegSAflFjbl8PX32DOQlg7KLWzKkRsf0RLMSAflJimFQqGErkSTcvSmitars9JBuYVNaR/5BG9YlQ7KLZRy7NYXaRFKuTY0UoOhK9GkTKUyNVIZ/AFrUTo90yha8QAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector, Image" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NTypeInto.Target>
+                          </uix:NTypeInto>
+                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1096,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_9" InteractionMode="SameAsCard" ScopeIdentifier="c83a4896-b48b-4103-a0cb-9b8ce8dc1ba3" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Report Payer Outstanding'" sap:VirtualizedContainerService.HintSize="1096,158" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c83a4896-b48b-4103-a0cb-9b8ce8dc1ba3" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable DesignTimeRectangle="233, 436, 404, 20" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Report Payer Outstanding'" FullSelectorArgument="&lt;wnd aaname='Workspace' cls='MDIClient' /&gt;&lt;wnd cls='ContentFrame' title='Content Pane' /&gt;&lt;wnd ctrlname='CoveringLetter' /&gt;&lt;wnd ctrlname='Reports' /&gt;&lt;ctrl name='Reports' role='grouping' /&gt;&lt;ctrl name='Transactions' role='link' /&gt;&lt;ctrl name='SHG_ReportPayerOutstanding' role='link' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Workspace' cls='MDIClient' /&gt;&lt;wnd cls='ContentFrame' title='Content Pane' /&gt;&lt;wnd ctrlname='CoveringLetter' /&gt;&lt;wnd ctrlname='Reports' /&gt;&lt;ctrl name='Reports' role='grouping' /&gt;&lt;ctrl name='Transactions' role='link' /&gt;&lt;ctrl name='SHG_ReportPayerOutstanding' role='link' automationid='' check:text='Report Payer Outstanding' /&gt;" Guid="66ddfec2-8f01-477d-9b96-6041029c84e4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAZgAAAAYCAYAAADH/Os5AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMpSURBVHhe7dq7ceMwEIDhC3gFKVUlbkAVOFQJmnEHStSCIwWqwaEDx25CCY9LCMQuHjyKc6Bk3h98c5YJLB43syuA/nW9XlsAAP41CgwAoAoKDACgCgoMAKAKCgwAoAoKDACgCgoMAKCKygXmo91tXtvfyu6Sa7c0O69mc2jfvnLtKruczN5sj9/5dk9D9u22V1/ndvuofQPwIyxQYFQS6hJqszm170m7GqKxR559Hg9t83JuP5N2FfV7oef33b69TC0yY2vzprS5V42YANZq2QKzaIIaG+uR8xKumCSnuf5UMKUAT5lvjTUtvU8AfrLlTzD6pNAnVH9N5RPrrc8lPDPf6lUfEZK067fbH4ZnXrP/CP1V25Ao7ef3fdw3UxD0WkbWIfNJTm3FQiLj+HmU5ij/5ufnf7e75Nrk1qXiHsN1XWm/t8ezmpOe39wYANZs0XcwNtHrBNXpErZLSq6PTd46kalEn3kWElsU37DPyldkqp0UFDV/SdZuHtE40TpMovVk3tnxdCGL568/p2Pavc20KT6Tn9X/jcQyRTLsd79P2TnMjQFgzZY7wfTFQH1rV99qbQHSicsZknkcQz9L+qVxApf0hnHj00SXIMMzH0P6qKSZOb0MfQrrGGTW4Uw5wWSe3eZgi1lm/OK6CuNIXFMIS3OYGwPAmi16RSbfXockWEyycQJS3+ozfeYXmMIzM4ZO+GH+89ah6ZOKYmKNrScfW+YlxSO7H8V1jYwjfSgwAGZ64Et++Tl3hRT9Pkm6KjFPTsixkWdyvWNOJ6pdnyxP3eklHqe0jtL4HXONJOI4URHq2/t45dih+EVtiuuKY+nPbk5+DhK7fEU2JwaANVu4wNwSjEl0+asl/bJ+SLJRH5uo0rH8S+3h3cAgbRu4xN73S4qJi5nEG1lHfowbdWUlzDqj582+m4uKZ9am26miZddfWlc8z+iziv3Xl/x3xwCwZpULzBxxsnou4UoOs/TFWJ/cAKwVBeYekhzN+wTcqz8BsofAf4ECM4m7XuLdwRzhak4kf7EHYLWesMAAANaAAgMAqIICAwCoggIDAKiCAgMAqODa/gH/xRsMrWOOCwAAAABJRU5ErkJggg==" InformativeScreenshot="bc2edb6332390e9db4c17e528d143ebb.png" ScopeSelectorArgument="&lt;wnd app='ax32.exe' cls='AxMainFrame' title='‪Microsoft Dynamics AX‬ - ‎‪PT Siloam International‬ [‎‪HO-ERPTE*' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.PointOffset>
+                                  <uix:PointOffset Position="BottomLeft" X="78" Y="-9" />
+                                </uix:TargetAnchorable.PointOffset>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: ‪Report Payer Outstanding‬ (‎‪1‬)‎" sap:VirtualizedContainerService.HintSize="1096,2699" sap2010:WorkflowViewState.IdRef="NApplicationCard_13" ScopeGuid="e327f25a-8a5b-4e82-9386-1c1ed50f500d" Version="V2">
+                            <uix:NApplicationCard.Body>
+                              <ActivityAction x:TypeArguments="x:Object">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1062,2406" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1000,145" sap2010:WorkflowViewState.IdRef="LogMessage_26" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Typing start date&quot;]" />
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ax32.exe ‪Report'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1000,219" sap2010:WorkflowViewState.IdRef="NTypeInto_9" ScopeIdentifier="e327f25a-8a5b-4e82-9386-1c1ed50f500d" Text="[New DateTime(DateTime.Now.Year, DateTime.Now.AddMonths(-1).Month, 4).ToString(&quot;d&quot;)]" Version="V3">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable DesignTimeRectangle="136, 95, 78, 24" DesignTimeScaleFactor="1" FriendlyName="'From Date'" FullSelectorArgument="&lt;wnd aaname='LayoutContainer' cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='AxChildFrame' title='‪Report Payer Outstanding‬ (‎‪1‬)‎' /&gt;&lt;wnd aaname='SysOperationTemplateForm' cls='AxPaneWnd' /&gt;&lt;wnd aaname='General' cls='AxPaneWnd' /&gt;&lt;wnd aaname='Parameters' cls='AxPaneWnd' /&gt;&lt;wnd cls='AxRichEdit' idx='2' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='LayoutContainer' cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='AxChildFrame' title='‪Report Payer Outstanding‬ (‎‪1‬)‎' /&gt;&lt;wnd aaname='SysOperationTemplateForm' cls='AxPaneWnd' /&gt;&lt;wnd aaname='General' cls='AxPaneWnd' /&gt;&lt;wnd aaname='Parameters' cls='AxPaneWnd' /&gt;&lt;wnd cls='AxRichEdit' check:fulltext='From Date' /&gt;" Guid="d6c10481-96c0-474e-9a26-2ad82442ce1d" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAcCAYAAADyfuiHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABnSURBVGhD7dCxDYAwAMAw/n8FMXFgmajEwFDIaEt5INsgYWRkjtyPUx+6PUayxsiIkREjI0ZGjIwYGTEyYmTEyIiRESMjRkaMjBgZMTJiZMTIiJERIyNGRoyMvI7Uerc5kn+MTIxxAcgXAR49fjEzAAAAAElFTkSuQmCC" InformativeScreenshot="be989a5490a92d440b12e0c1be031078.png" ScopeSelectorArgument="&lt;wnd app='ax32.exe' cls='AxTopLevelFrame' title='‪Report Payer Outstanding‬ (‎‪1‬)‎' /&gt;" SearchSteps="FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="31, 98, 62, 18" FriendlyName="'ax32.exe ‪Report'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAD4AAAASCAYAAAADr20JAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEmSURBVFhH7VTbEQMhCExz9mIplGIlFnKNEEEI6BkvmTxnvJ3xAxR3F7m74KI4ja+GYjwjhIDBrZg22f40fsctxiN+zWuDnlsaAVnie3hd858ZL9gSxgBlZ4aPGq95gFhGUISwKBtLexi5I9s+7W2JamcjPOLeMEW7O4Px1Umgmj5X0GgTvRkwxFRu3GP4jde7at4E11h5KpGKljuUhAh9LcejV6S6uXGDP9vXdXHhY+5j4z05ocsPRpBew5o0EfIoB4OMu5w0sS7Nj7TZw/Had67B/xn3PA2nb8ixtiM8bpzjftSVbHR2FisOOPyoMp+eHdft/iNvGXUCk+s49cTPxArKu/HcnanfO+9FQHCfwO2np11qtEl+bnxNnMZXw2l8NSxqHPEKZzctfUbKKx4AAAAASUVORK5CYII=" SearchSteps="Image" TargetType="ImageBased" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                  </uix:NTypeInto>
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1000,145" sap2010:WorkflowViewState.IdRef="LogMessage_27" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Typing End date&quot;]" />
+                                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'ax32.exe ‪Report'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1000,219" sap2010:WorkflowViewState.IdRef="NTypeInto_10" ScopeIdentifier="e327f25a-8a5b-4e82-9386-1c1ed50f500d" Text="[New DateTime(DateTime.Now.Year, DateTime.Now.Month, 4).ToString(&quot;d&quot;)]" Version="V3">
+                                    <uix:NTypeInto.Target>
+                                      <uix:TargetAnchorable DesignTimeRectangle="136, 121, 78, 24" DesignTimeScaleFactor="1" FriendlyName="'5/6/2024'" FullSelectorArgument="&lt;wnd aaname='LayoutContainer' cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='AxChildFrame' title='‪Report Payer Outstanding‬ (‎‪1‬)‎' /&gt;&lt;wnd aaname='SysOperationTemplateForm' cls='AxPaneWnd' /&gt;&lt;wnd aaname='General' cls='AxPaneWnd' /&gt;&lt;wnd aaname='Parameters' cls='AxPaneWnd' /&gt;&lt;wnd cls='AxRichEdit' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='LayoutContainer' cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='AxChildFrame' title='‪Report Payer Outstanding‬ (‎‪1‬)‎' /&gt;&lt;wnd aaname='SysOperationTemplateForm' cls='AxPaneWnd' /&gt;&lt;wnd aaname='General' cls='AxPaneWnd' /&gt;&lt;wnd aaname='Parameters' cls='AxPaneWnd' /&gt;&lt;wnd cls='AxRichEdit' check:text='5/6/2024' /&gt;" Guid="806b9dfb-051d-46a4-aca0-372a9460bffd" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFIAAAAcCAYAAADyfuiHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGVSURBVGhD7ZXbbcMwDEU1lwbSPNqj6FcBL+NhWFFPiqbcOCEKG+ABhKbMhWMe0bIDQwUTqUQX+fX9Y+uN1ZhEGtcwkUqYSCVMpBImUom3RO7Rg3OurgBbrXe2AC6M6hZa1kPca7FBsiPnwNMgZoT6Ml/J9+kjHL/R5y2R2ADxxNgh+iEMs1KTBZLdI8R+zQ1Cl46f22aR+jLfwFqSfG+R/KYJqUHfLadmzhqZshQimE03TtlxY+bNQzAXYrr+fUXiTa8fqdxA94gSQpkMYTqm7MSYwoM4JrYw8pm2Qfj3zhM54I8UayifbeP7+TFnWQLNvSJyvu58XDxEJGsiNXnaNP2fZzNl2mn9XOQf+aeJLH0dz6m1SCEr1hLsGkOUlMcpH8dOX/8g8zORuOPkLXp8cdBHv0xP8ShkufRG/g3hrb3KU+49kfOut15wUsS+soiarwEpi7U+QXX1RxSl1Rr9PZrFNR0ByL1FSiS5L9/wlexzUBJpmEglTKQSJlIJE6mEiVTCRCqxFGnr+mp0kcZnmEgVAH4BcfyfROYMekIAAAAASUVORK5CYII=" InformativeScreenshot="83e9ac81b35b9fc597cae9fad40a97c3.png" ScopeSelectorArgument="&lt;wnd app='ax32.exe' cls='AxTopLevelFrame' title='‪Report Payer Outstanding‬ (‎‪1‬)‎' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="31, 125, 46, 13" FriendlyName="'ax32.exe ‪Report'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC4AAAANCAYAAADWgVyvAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADlSURBVEhL1ZTZDQUhCEVfc/ZiKZRiJRYyjfAUN3CNJn54k/kYFe4RmPnho3oX3IJCpdpHmy8eWckiHMeei1XcA2jc96zj4kXAxveRTv2CLoA7fQa1Arcz001wAigj0C9iD+BDo8t5MY606GPqNSfhFy9uAZU2LqPUBDwkz7CUtFehNXgRP9vzY+8OmL6VbfBOu33l5jBJHlxC5OqOwKvu0tOaZd0B57EiD7/Q2m+mzVHpJV7E8VZTjgF4jGt+pfsz7kRGqXXVXlYwLC2uz4V5pz0NCGyE8kebbin84voa/C09Co74B9traXY0LXjqAAAAAElFTkSuQmCC" SearchSteps="Image" TargetType="ImageBased" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NTypeInto.Target>
+                                  </uix:NTypeInto>
+                                  <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="1000,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_5" InteractionMode="SameAsCard" ScopeIdentifier="e327f25a-8a5b-4e82-9386-1c1ed50f500d" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+                                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1000,145" sap2010:WorkflowViewState.IdRef="LogMessage_23" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;START CHECK ERROR CONNECTIONS&quot;]" />
+                                  <uix:NCheckState DisplayName="Check App State 'Message (11:40:57)'" sap:VirtualizedContainerService.HintSize="1000,875" sap2010:WorkflowViewState.IdRef="NCheckState_9" ScopeIdentifier="e327f25a-8a5b-4e82-9386-1c1ed50f500d" Version="V3">
+                                    <uix:NCheckState.IfExists>
+                                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,656" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,145" sap2010:WorkflowViewState.IdRef="LogMessage_24" Level="[UiPath.Core.Activities.LogLevel.Warn]" Message="[&quot;Error connections&quot;]" />
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e327f25a-8a5b-4e82-9386-1c1ed50f500d" Version="V3">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable DesignTimeRectangle="262, 396, 75, 26" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Close'" FullSelectorArgument="&lt;wnd aaname='LayoutContainer' cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='AxChildFrame' title='‪Infolog‬ (‎‪1‬)‎' /&gt;&lt;wnd aaname='SysInfologBrowser' cls='AxPaneWnd' /&gt;&lt;wnd aaname='Close' cls='AxButton' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='LayoutContainer' cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='AxChildFrame' title='‪Infolog‬ (‎‪1‬)‎' /&gt;&lt;wnd aaname='SysInfologBrowser' cls='AxPaneWnd' /&gt;&lt;wnd aaname='Close' cls='AxButton' check:text='Close' /&gt;" Guid="bcba513d-8c3d-4a4b-b42b-0b1c0b297694" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAeCAYAAABt5kPUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE5SURBVGhD7ZbBjcMgEEXpiW6oZG+0QitUsWd34A5mDcYOH2Nv4lFEdvUPT8qMvx35aYbEzPMs5B6Up4DyFIA88/VNfgF8QdEJEwR8QVEC0zSRBspTQHkKKE8B5Sn4AHlRvDViTMF6ibkfxBkrPrb5z2GsvOjFLsJcwJ7PNeVdsE4ciAMo75w8dU5C71qmkVemdFvvh3Rc+70P+avvuc9Yefv51qOWlz63Ysq14MS4UN2XaMQvGetjk9EzVt6zk9fJBldklgkDOaW3TWPmIFjPOHmvnHlX8kodvc2SHkLfs6o1A+UtpJXbXnjrLS9+/LXtre1RThK4TuCaf8eq1oyVl2hX7Ox/HuTwPNvvrYW2z/1fa/v3oTwFlKeA8hRQngLKU/C0PHIO+IKiEyYI+KoL8hqUp4DybjPLD4Ola9Ug70bJAAAAAElFTkSuQmCC" InformativeScreenshot="7c32d7af2938799316008c35bff8eaac.png" ScopeSelectorArgument="&lt;wnd app='ax32.exe' cls='AxTopLevelFrame' title='‪Infolog‬ (‎‪1‬)‎' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <uix:Target DesignTimeRectangle="182, 396, 75, 26" ElementType="Button" FriendlyName="'Clear'" FullSelectorArgument="&lt;wnd aaname='LayoutContainer' cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='AxChildFrame' title='‪Infolog‬ (‎‪1‬)‎' /&gt;&lt;wnd aaname='SysInfologBrowser' cls='AxPaneWnd' /&gt;&lt;wnd aaname='Clear' cls='AxButton' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='LayoutContainer' cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='AxChildFrame' title='‪Infolog‬ (‎‪1‬)‎' /&gt;&lt;wnd aaname='SysInfologBrowser' cls='AxPaneWnd' /&gt;&lt;wnd aaname='Clear' cls='AxButton' check:text='Clear' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAE8AAAAeCAYAAABt5kPUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAERSURBVGhD7dbhDYMgEIZhdmKbW4ZVWMAhGMUN2OAq1FaOikbPRo3fjyexFPvjzWE1MUaGfRBPAfEURLyu62BF2esnXt/30IB4CoingHgKiKeAeAoXiBfYWcPGjKzjkNc9k7HsQr3/Os6NFxzbIRh5uebyZ8Rb8J44EU5AvLY8dcR+7rusijdO6ft4T/d5Ko48eXEvkRV7j3ZuvO/zbU4Zrwrpia0Lxd56T7o2M3uOdY/JE1NXTdkQclpvxP6T8+Jteea1Qov19HuPiTcYp2b93zZdzxzDdP/n6OeQT4qX1Eey9Z5X78vHtnhHtMT0qMm7OcRTQDwFxFNAPAXEU0A8hdV4sKzsJeLBNoingHi7RX4BryLunH4oxzYAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="e327f25a-8a5b-4e82-9386-1c1ed50f500d" Version="V3">
+                                          <uix:NClick.Target>
+                                            <uix:TargetAnchorable DesignTimeRectangle="986, 1, 47, 30" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Close'" FullSelectorArgument="&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="310509a7-45e5-4be3-a6f2-77b2a4075fd1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADMAAAAhCAYAAAB0v5O6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACuSURBVFhH7ZVNCgIxDEazET2C9/V63Ut0zuBWd5lGWqhMKSqTkpbvwUen7Szy6B+dL1cZPRlK7bBAxiuQ8QpkvAIZr5jKEJGEEFJvi87pP3thKqPFHo6nqlBr7l/Mt1mtaAsRpcuZKYu3ElG6XQBZwkpEgcyvZBFty++9wQXwLa2iLYRMZaZ6NHsDGa9AxivTydzuyztYGU9AxivzyjyeIiPnU+YVBweOyjBzDMsKu2VdoVmHby4AAAAASUVORK5CYII=" InformativeScreenshot="d540c939c809563121b9da44b92aa6b0.png" ScopeSelectorArgument="&lt;wnd app='ax32.exe' cls='AxTopLevelFrame' title='‪Report Payer Outstanding‬ (‎‪1‬)‎' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <uix:Target DesignTimeRectangle="940, 1, 46, 30" ElementType="Button" FriendlyName="'Maximize'" FullSelectorArgument="&lt;ctrl name='Maximize' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Maximize' role='push button' automationid='' check:text='Maximize' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADIAAAAhCAYAAACbffiEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABpSURBVFhH7c/BCYAwEETRKcN+LdIq9Kq3tYJoIBt2CP/BXAe+tv2IFaZYBCFuCHFDiBtC3KSHSOpatikhfwj5QEgLIYMIaSFk0JSQnmXLfyxCiBtC3BDihhA3hLjReUdU7kpafciTsYgX2f3s9VrnayAAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NClick.Target>
+                                        </uix:NClick>
+                                      </Sequence>
+                                    </uix:NCheckState.IfExists>
+                                    <uix:NCheckState.IfNotExists>
+                                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,383" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,145" sap2010:WorkflowViewState.IdRef="LogMessage_25" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Connections running smoothly&quot;]" />
+                                        <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_16">
+                                          <Assign.To>
+                                            <OutArgument x:TypeArguments="x:Boolean">[isErrorConnection]</OutArgument>
+                                          </Assign.To>
+                                          <Assign.Value>
+                                            <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                          </Assign.Value>
+                                        </Assign>
+                                      </Sequence>
+                                    </uix:NCheckState.IfNotExists>
+                                    <uix:NCheckState.Target>
+                                      <uix:TargetAnchorable DesignTimeRectangle="19, 89, 314, 187" DesignTimeScaleFactor="1" FriendlyName="'Message (11:40:57)'" FullSelectorArgument="&lt;wnd aaname='LayoutContainer' cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='AxChildFrame' title='‪Infolog‬ (‎‪1‬)‎' /&gt;&lt;wnd aaname='SysInfologBrowser' cls='AxPaneWnd' /&gt;&lt;wnd cls='AxTreeViewCtrl' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='LayoutContainer' cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='AxChildFrame' title='‪Infolog‬ (‎‪1‬)‎' /&gt;&lt;wnd aaname='SysInfologBrowser' cls='AxPaneWnd' /&gt;&lt;wnd cls='AxTreeViewCtrl' check:fulltext='Message (11:40:57)&amp;#xD;&amp;#xA;&amp;#x9;The logon attempt failed' /&gt;" Guid="8c6c1d40-5ce1-45db-9076-8556d52891b5" ImageBase64="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" InformativeScreenshot="177306e7ea988ad39754b51755baf115.png" ScopeSelectorArgument="&lt;wnd app='ax32.exe' cls='AxTopLevelFrame' title='‪Infolog‬ (‎‪1‬)‎' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive" />
+                                    </uix:NCheckState.Target>
+                                  </uix:NCheckState>
+                                  <Assign sap:VirtualizedContainerService.HintSize="1000,83" sap2010:WorkflowViewState.IdRef="Assign_17">
+                                    <Assign.To>
+                                      <OutArgument x:TypeArguments="x:Int32">[tryExport]</OutArgument>
+                                    </Assign.To>
+                                    <Assign.Value>
+                                      <InArgument x:TypeArguments="x:Int32">[tryExport + 1]</InArgument>
+                                    </Assign.Value>
+                                  </Assign>
+                                </Sequence>
+                              </ActivityAction>
+                            </uix:NApplicationCard.Body>
+                            <uix:NApplicationCard.TargetApp>
+                              <uix:TargetApp Area="246, 144, 594, 458" FilePath="C:\Program Files (x86)\Microsoft Dynamics AX\60\Client\Bin\ax32.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKrSURBVFhHxZVtSBRRFIbtRxB9/wr6ERIEkZoFkhD9drMINwjJzKxoI8LUvouIaDMUiqKQTYwiSIhIg8IwRIyykFwKU9raUFc33Vx1Te0LC7e3OWd3hjuXnWXL3emFB+a898w9Z+7M3JuUlGzFfyWiaSYRTTOJaJqJbCRSci1GNhIpuRYjG4mUXIuRDcPEaWI4r2wYJk4Tw3llQ0w0UrRxdezz+Fd0uvt0ueq1DtkQE40k5htB8vqGdbE4riEbYqKRoo2LYwlvIBok01fAUmDHgpX52pjpK3Crthnz07bxNcnUFUizlOBZmwvzUkMNqNCKzFy2hXNEX0M2xEQjifkqc1Zsxfcfk9orUCl31GHW8lzD++KyAvT0e447EAz+1l4BsWStDe+7BxLXgMqMpZvh7hnA1FQQC9O3a/7d+ufo6vuE2crqjE18Yy9j0xFtnNEFCmIBI4n5RI6tnH1qQF2BDbvK2Ovx+vm7IN92woGnL9/q79cFCiTZiwY9PW25qqjQ3JQ8DI9OcDwUGGcvr/gSxy1Ol34OXaBAkr1o0FOJWpSxE4WHr4ajUAMpWcV4866X45gaiEUV1+5zMTp0RKUqxVpfu8NRqIE1OUdjb+BvqGto5UlFmdbAvlNVPKGs9OxSODu6whH4W8i0HotvA/QrTf78xRM+an6F85W1sO6tgGWHnRt40tqpvRqffxSrNx6KXwOLM3fzslKBB41t2H+6GkVnrqOs8h6qah7DcbsBV27W4+SFGuSXXsb6wnPc8AePLz4NPGxywvPRj+o7jWh60YF2lwe9/UPKwTOibDqDvPF0ewfRPxhAYOwLNzsS/iVJLcp5oZtTF8TAAeVpc4suIqvgLG/BtN0S8hlAMfnJ62xYlX2QNya6t8R+Q5f3zx9h3IhomklE0zSs+APXi8fPz7/RZwAAAABJRU5ErkJggg==" InformativeScreenshot="1c6662d1fa5d92365ab74ecc4f0d4696.png" Selector="&lt;wnd app='ax32.exe' cls='AxTopLevelFrame' title='‪Report Payer Outstanding‬ (‎‪1‬)‎' /&gt;" Title="‪Report Payer Outstanding‬ (‎‪1‬)‎" />
+                            </uix:NApplicationCard.TargetApp>
+                          </uix:NApplicationCard>
+                        </Sequence>
+                      </ui:InterruptibleWhile.Body>
+                    </ui:InterruptibleWhile>
+                    <If Condition="[isErrorConnection]" sap:VirtualizedContainerService.HintSize="1316,5417" sap2010:WorkflowViewState.IdRef="If_4">
+                      <If.Then>
+                        <Sequence sap:VirtualizedContainerService.HintSize="376,552" sap2010:WorkflowViewState.IdRef="Sequence_59">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,145" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="[UiPath.Core.Activities.LogLevel.Error]" Message="[&quot;Process is stopped after 10 times retry&quot;]" />
+                          <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="FAILED " DisplayName="Send SMTP Mail Message" Email="Admin-noreply@siloamhospitals.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,148" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Password="jzcygbckrrqstmkt" Port="587" SecureConnection="Auto" Server="smtp.office365.com" Subject="RPA for generate repport failed" To="hafidz.tafsani@bithealth.co.id">
+                            <ui:SendMail.Files>
+                              <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+                            </ui:SendMail.Files>
+                          </ui:SendMail>
+                          <Throw Exception="[New Exception(&quot;Stopped&quot;)]" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Throw_6" />
+                        </Sequence>
+                      </If.Then>
+                      <If.Else>
+                        <Sequence sap:VirtualizedContainerService.HintSize="1282,4682" sap2010:WorkflowViewState.IdRef="Sequence_60">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1240,145" sap2010:WorkflowViewState.IdRef="LogMessage_36" Level="[UiPath.Core.Activities.LogLevel.Trace]" Message="[&quot;Continue process to export file&quot;]" />
+                          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: ‪Report Payer Outstanding‬ (‎‪1‬)‎" sap:VirtualizedContainerService.HintSize="1240,4409" sap2010:WorkflowViewState.IdRef="NApplicationCard_17" ScopeGuid="73b9987c-981f-404a-8749-cbb7c14e95af" Version="V2">
+                            <uix:NApplicationCard.Body>
+                              <ActivityAction x:TypeArguments="x:Object">
+                                <ActivityAction.Argument>
+                                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                </ActivityAction.Argument>
+                                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1206,4116" sap2010:WorkflowViewState.IdRef="Sequence_61">
+                                  <Sequence.Variables>
+                                    <Variable x:TypeArguments="x:Boolean" Default="True" Name="isLoading" />
+                                    <Variable x:TypeArguments="x:Boolean" Default="False" Name="isReadyToSaveFile" />
+                                    <Variable x:TypeArguments="x:Int32" Default="0" Name="loopLoading" />
+                                    <Variable x:TypeArguments="x:String" Name="variable1" />
+                                  </Sequence.Variables>
+                                  <sap:WorkflowViewStateService.ViewState>
+                                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                    </scg:Dictionary>
+                                  </sap:WorkflowViewStateService.ViewState>
+                                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[isLoading and loopLoading &lt; 10]" DisplayName="While" sap:VirtualizedContainerService.HintSize="1144,1189" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_11">
+                                    <ui:InterruptibleWhile.Body>
+                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1108,1021" sap2010:WorkflowViewState.IdRef="Sequence_64">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NCheckState DisplayName="Check App State 'Payer Outstanding Unit'" sap:VirtualizedContainerService.HintSize="1046,910" sap2010:WorkflowViewState.IdRef="NCheckState_12" ScopeIdentifier="73b9987c-981f-404a-8749-cbb7c14e95af" Version="V3">
+                                          <uix:NCheckState.IfExists>
+                                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,691" sap2010:WorkflowViewState.IdRef="Sequence_62">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,145" sap2010:WorkflowViewState.IdRef="LogMessage_31" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[isLoading]" />
+                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,145" sap2010:WorkflowViewState.IdRef="LogMessage_33" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Done Loading&quot;]" />
+                                              <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_18">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:Boolean">[isLoading]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                                                </Assign.Value>
+                                              </Assign>
+                                              <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_19">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:Int32">[loopLoading]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:Int32">[loopLoading + 1]</InArgument>
+                                                </Assign.Value>
+                                              </Assign>
+                                            </Sequence>
+                                          </uix:NCheckState.IfExists>
+                                          <uix:NCheckState.IfNotExists>
+                                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="496,514" sap2010:WorkflowViewState.IdRef="Sequence_63">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,145" sap2010:WorkflowViewState.IdRef="LogMessage_32" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[isLoading]" />
+                                              <Delay Duration="00:01:00" sap:VirtualizedContainerService.HintSize="434,91" sap2010:WorkflowViewState.IdRef="Delay_9" />
+                                              <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_20">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:Int32">[loopLoading]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:Int32">[loopLoading + 1]</InArgument>
+                                                </Assign.Value>
+                                              </Assign>
+                                            </Sequence>
+                                          </uix:NCheckState.IfNotExists>
+                                          <uix:NCheckState.Target>
+                                            <uix:TargetAnchorable DesignTimeRectangle="17, 158, 287, 23" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Payer Outstanding Unit'" FullSelectorArgument="&lt;wnd aaname='LayoutContainer' cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='AxChildFrame' title='‪Report Payer Outstanding‬ (‎‪1‬)‎' /&gt;&lt;wnd aaname='SrsReportViewer' cls='AxPaneWnd' /&gt;&lt;wnd ctrlname='WinFormsContainer' /&gt;&lt;wnd ctrlname='ReportViewer' /&gt;&lt;wnd ctrlname='paramsSplitContainer' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' /&gt;&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='dmSplitContainer' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' /&gt;&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='winRSviewer' /&gt;&lt;wnd aaname='Horizontal' cls='WindowsForms10.Window.*' /&gt;&lt;ctrl name='Report' role='pane' /&gt;&lt;ctrl name='ReportSection0' role='grouping' /&gt;&lt;ctrl name='Header' role='grouping' /&gt;&lt;ctrl idx='3' name='Text Box' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='LayoutContainer' cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='AxChildFrame' title='‪Report Payer Outstanding‬ (‎‪1‬)‎' /&gt;&lt;wnd aaname='SrsReportViewer' cls='AxPaneWnd' /&gt;&lt;wnd ctrlname='WinFormsContainer' /&gt;&lt;wnd ctrlname='ReportViewer' /&gt;&lt;wnd ctrlname='paramsSplitContainer' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' /&gt;&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='dmSplitContainer' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' /&gt;&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='winRSviewer' /&gt;&lt;wnd aaname='Horizontal' cls='WindowsForms10.Window.*' /&gt;&lt;ctrl name='Report' role='pane' /&gt;&lt;ctrl name='ReportSection0' role='grouping' /&gt;&lt;ctrl name='Header' role='grouping' /&gt;&lt;ctrl automationid='' name='Text Box' role='text' check:text='Payer Outstanding Unit' /&gt;" Guid="903cd650-e10e-4cd5-9e05-da09aedc0ef8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAASMAAAAbCAYAAAA3fulZAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL+SURBVHhe7ZmBccMgDEU9FwN5Hk+TZTIMNQ6yQYCBOO7R9L077kosJKDSDziTBQAYAMQIAIYAMQKAIUCMAGAIECMAGALECACGADECgCFAjABgCBAjABiCghg97DxNdkqascvTm4zCc7Fm9Dk28bSLcfOf193P9T+N/x/PoffemHfPEf4T52JkljXdBBGogYr9Ma/zmawJJvRczPZZVGM1nKC1DGi1e4svEaNb9wi+mQ4xcnn2RqHfRn6O3QUlJ6vaolrt3uZu8dF8QowUt+8RfDPXxEiSb29yasoktT/FHHnqY0jLncKM8f4zxZE5FQnxPPVawrnJ39Iyn23jcnbOVWn9jiPuMh82ce0H4+fVLtozvYed/sxs52i8xvuLHXTGDO0LewTQyBvXNJWoe2bGY7RwPbZklmLV/gv9kyvh6SktEirtWxWc+jYP/UYxlN3uV/eLayg8l/4uJLK/BWFo9ef3oCwK3n6fv6M35vleAvTwgRfYhW/EKDHzhZK+6yklfcrdYpQUVLHQCuuvxU32QD1P+lf9aby/aD2dMXUfMYILdF3TYrzN2qKizyWqT1IplL3gM+2Vxw3xM4ImxEJVKaikgOT50bZHiV1t/edxUzFV80r6V/1pvL9jwEpfzKSPGMEF3hcjLwZH3mXGbDbGzrMrlOBUdSIkLxriF206C+qsgPw8t2farrr+StxkDyqFftmfJrd/nTF1HzGCC1wWI0m847QTJr/3k/iqJXlDfIeag6N6QpCC0bH8gNe7LT/e20YnH3FcXX/nGsXf/ry2J73+UqK1OhIxqcUszGEfD9DOhWvakcyS9MtWkPF7JbFJT0E+RjD+SOG2+Bu7uEjLvNfaC3Ntya9W4TrcWCkw34I5xHZh3zW9/lohr4Rz7/g1reivss4c8RrcuNC6FjOdg94jgFYKYvQ5JDn5svxtMmIFMDA3i5GcfiiI26lcPwFG5z4xCq4M1MPvcLy3ksaXAPwdbr+mAQC0gBgBwBAgRgAwBIgRAAwBYgQAA2DtD/kPWTQtdHb1AAAAAElFTkSuQmCC" InformativeScreenshot="aab6e2cd828f3e44adf8a890bfcd8b0c.png" ScopeSelectorArgument="&lt;wnd app='ax32.exe' cls='AxTopLevelFrame' title='‪Report Payer Outstanding‬ (‎‪1‬)‎' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                                              <uix:TargetAnchorable.Anchors>
+                                                <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                  <uix:Target DesignTimeRectangle="266, 87, 29, 22" FriendlyName="'Export drop'" FullSelectorArgument="&lt;wnd aaname='LayoutContainer' cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='AxChildFrame' title='‪Report Payer Outstanding‬ (‎‪1‬)‎' /&gt;&lt;wnd aaname='SrsReportViewer' cls='AxPaneWnd' /&gt;&lt;wnd ctrlname='WinFormsContainer' /&gt;&lt;wnd ctrlname='ReportViewer' /&gt;&lt;wnd ctrlname='paramsSplitContainer' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' /&gt;&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='reportToolBar' /&gt;&lt;wnd ctrlname='toolStrip1' /&gt;&lt;ctrl name='Toolstrip' role='tool bar' /&gt;&lt;ctrl name='Export drop down menu' role='menu item' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='LayoutContainer' cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='AxChildFrame' title='‪Report Payer Outstanding‬ (‎‪1‬)‎' /&gt;&lt;wnd aaname='SrsReportViewer' cls='AxPaneWnd' /&gt;&lt;wnd ctrlname='WinFormsContainer' /&gt;&lt;wnd ctrlname='ReportViewer' /&gt;&lt;wnd ctrlname='paramsSplitContainer' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' /&gt;&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='reportToolBar' /&gt;&lt;wnd ctrlname='toolStrip1' /&gt;&lt;ctrl name='Toolstrip' role='tool bar' /&gt;&lt;ctrl name='Export drop down menu' role='menu item' automationid='' check:fulltext='Export drop down menu&amp;#xD;&amp;#xA;Word&amp;#xD;&amp;#xA;Excel&amp;#xD;&amp;#xA;PowerPoint&amp;#xD;&amp;#xA;PDF&amp;#xD;&amp;#xA;TIFF file&amp;#xD;&amp;#xA;MHTML (web archive)&amp;#xD;&amp;#xA;CSV (comma' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACEAAAAaCAYAAAA5WTUBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALASURBVEhL7dN9SBNxHMfx+zNCEBIhwjCoCEsyMCYETUpRybQwpNSFmdNKA4Uh5MRMyFDJrFaYT00Ry2lqD2vpLBVLaQ7yIf9ohDWQNB9Kd9udc9N92l0IbbtwM2v+0Q9e//zu9717c9wRQqEQ7kYsLi7C3dZHhNlshrv9j1hGmEwm2HuqovDoBY221xS6+kkoe2fxrHMGLe2TkMknUNs8hoviAcSL+5CZMeQw7yoC1mW/qeimUV1phuaDmbnMsSyISlBgf3g++Pxch3lXcUY87jCgvMyAwUGKfeTyslgAkjJhbFKP8IR2iLM/r13EwsKCjSYFCcnt71Cr59iHM8tiLdDTPwNGRqfBj1MiSdTPRtjPu4oz4sGTORQVjkOtmmEDmGW2LOGbjsan8VkMaL7CP7oVMSltfy9C2jiDyopptFg/QPW7KfSoJqwfphb1cg3uyt4jW/ocXsWhiBA0r12E0Wi0cavqC3rfANdLppB6fhSCZA1iBEMIPfEWQUe64VsUi+CMAgSflLIR9vMMgiAccJ1jcEYUSsasbwGorwNEYgXSRA1ITq/BqTN3kJJeAT9ZCMLi6sCLrvhtBMOZAAZnRF6xFtL7wM0bRhw/nYsNnh6ITUpD3/BHXJOUI+DlIfhnZiEgqgQR/ccc5n+1UgCDjZifn7eRdWUU98qWkHt5GpFxOTgYdhSlVU0wWn/R2sZW8HoPw/MqD9sjc7D7VSB4PXyHe7iCjaBp2kZ2uQaXCrUIEsixJTgRBTUtKJXJUS3vgECUhQOqECSNpGKnci/ODp+DcOQCdnXuc7iPszgjnLG9eQ/ihxLB0/Lh3xWIzXXb4Kv04zy7EjaCoqhV2dSwFT4Pd8BL4gOPfG/OM874owiGR4E3NuZ5cV5zFhthMBhWjQng2ncFG6HX692K4Nr81wiSJOFuhE6ng7utgzdB4gcsDhpqfYYcjwAAAABJRU5ErkJggg==" SearchSteps="Selector, FuzzySelector" />
+                                                </scg:List>
+                                              </uix:TargetAnchorable.Anchors>
+                                            </uix:TargetAnchorable>
+                                          </uix:NCheckState.Target>
+                                        </uix:NCheckState>
+                                      </Sequence>
+                                    </ui:InterruptibleWhile.Body>
+                                  </ui:InterruptibleWhile>
+                                  <If Condition="[isLoading]" sap:VirtualizedContainerService.HintSize="1144,362" sap2010:WorkflowViewState.IdRef="If_5">
+                                    <If.Then>
+                                      <Sequence sap:VirtualizedContainerService.HintSize="376,179" sap2010:WorkflowViewState.IdRef="Sequence_65">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <Throw Exception="[New Exception(&quot;No UI Element Found&quot;)]" sap:VirtualizedContainerService.HintSize="334,91" sap2010:WorkflowViewState.IdRef="Throw_5" />
+                                      </Sequence>
+                                    </If.Then>
+                                    <If.Else>
+                                      <Sequence sap2010:WorkflowViewState.IdRef="Sequence_66" />
+                                    </If.Else>
+                                  </If>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ax32.exe ‪Report'" sap:VirtualizedContainerService.HintSize="1144,158" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="73b9987c-981f-404a-8749-cbb7c14e95af" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable DesignTimeRectangle="268, 91, 26, 16" DesignTimeScaleFactor="1" FriendlyName="'ax32.exe ‪Report'" Guid="0a53a1b1-cbf8-4a29-99b4-1f4285b9cbef" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABoAAAAQCAYAAAAI0W+oAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJ7SURBVDhPtZJrSNNRGIf3MUIQEiHCMLAISzIwJgRNSlHJtDCk1IWZaaWBwhBSMRMyVDKrFeYtFbG8pHZZ5qVULCUV8pIfGmEJkualNHdxTtzT/tMPlX/TGR14zof3Pb/34XCOxGg08rRTx6MXeupf62jpmqGxfYpnzZPUNIxRoRqlpHqYi4k9hCR2EBfbh5CxFouorlVPYf486g/ziC8T/qF17PNJRSZLFh20GhbR4yYtuTlaent1S4MXl8kEMzojw2MafEIbSEz4vH7R3NwcVXUzKG9/p7t7ekkhSExo9IuSgcEJZMGNhCu6LCIhYy0W0YMn02Skj9DdObmkgXnTAt9+6Pk0MkWP+isuAbUERtb/m6iocpL8vAlqzI/e/W6cts5R82cYokyl5m7FexKKnmOX6YWvvHr9IoPBwK2CL7S/getZ40SdH0QeoSZQ3ofX8be4H27FMSMIj9g0PE4UWURC5k8kEskyfusLW7py2HwbKCsFRWId0YpyImKKOXn6DpExeThXeOIdXIo0IG9FkcBKEktP2FIyhyi6DzdvGDh2KpkNtjYEhUfT0f+Ra8pcXF8exCUuHlf/LHy7ji4b8itiEkt9dnaW+CuD3MtZIPnyBH7BSRzwPkJ2QRUG8/cuqaxF2n4I26tSnPyS2PXKDWmbDCFnDRK9Xk9CrppL6UO4y1Vs8QgjrbiG7AoVhaom5Ip49nd6Ej4QxY7GPZzpP8fZgQvsbN6LkF0rFtFacKreTUhfGNIhGS4tbmwu3YZjo7PoWTEkOp2OtbKpfCsOD7djp3TAJtVe9MxKWCUSsEmzZ2OKnWjvb0i0Wi3WIEjE6qsh0Wg0/H80/ATFn5ihnBcG+wAAAABJRU5ErkJggg==" InformativeScreenshot="b15f20db189d979244d0acca0baeb2a0.png" ScopeSelectorArgument="&lt;wnd app='ax32.exe' cls='AxTopLevelFrame' title='‪Report Payer Outstanding‬ (‎‪1‬)‎' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target Accuracy="1" DesignTimeRectangle="237, 87, 23, 22" ElementType="Button" FriendlyName="'Refresh'" FullSelectorArgument="&lt;wnd aaname='LayoutContainer' cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='AxChildFrame' title='‪Report Payer Outstanding‬ (‎‪1‬)‎' /&gt;&lt;wnd aaname='SrsReportViewer' cls='AxPaneWnd' /&gt;&lt;wnd ctrlname='WinFormsContainer' /&gt;&lt;wnd ctrlname='ReportViewer' /&gt;&lt;wnd ctrlname='paramsSplitContainer' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' /&gt;&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='reportToolBar' /&gt;&lt;wnd ctrlname='toolStrip1' /&gt;&lt;ctrl name='Toolstrip' role='tool bar' /&gt;&lt;ctrl name='Refresh' role='push button' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='LayoutContainer' cls='WindowsForms10.Window.*' /&gt;&lt;wnd cls='AxChildFrame' title='‪Report Payer Outstanding‬ (‎‪1‬)‎' /&gt;&lt;wnd aaname='SrsReportViewer' cls='AxPaneWnd' /&gt;&lt;wnd ctrlname='WinFormsContainer' /&gt;&lt;wnd ctrlname='ReportViewer' /&gt;&lt;wnd ctrlname='paramsSplitContainer' /&gt;&lt;wnd ctrlname='tableLayoutPanel1' /&gt;&lt;wnd ctrlname='panel2' /&gt;&lt;wnd ctrlname='reportToolBar' /&gt;&lt;wnd ctrlname='toolStrip1' /&gt;&lt;ctrl name='Toolstrip' role='tool bar' /&gt;&lt;ctrl name='Refresh' role='push button' automationid='' check:fulltext='Refresh' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABsAAAAaCAYAAABGiCfwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJVSURBVEhLzZJLTxNRGIbnH2miezf+lG5l4yXRvZEYF8YExERE4v2y0GJQIiKgKQVbG+idikBp7bQhtDOdmd6GvM57yGlgehoSFxMXT/L1nH7v0/P100KhEIJCc10XQRGsrNfrISj+P5ndamM1V8OtV1lcfpjElcmkqHnmeHeqHhVat9vFMNrtNqLZKi5NrGM2VsWWbqPZdmG2XFHzjPL0zr6y389QGUX33m/ixXLJCz9Ex4Xg4vML/Zrkyzam5osY/1AQPaosyVBZNF3Fs6US7A5OQBnxn/O7P7yxqrIkWqfTgR/DtMXo9q1DGC0IpIScv3NGIO/In3oPIw82YNnOQJ5EKYt4rwqv1TwZBBSMbFwVnBs9K0Ty7jhvI7p4nSqTKGU3X2bxc9tBxQCmik+FjDWhSNZ+2MNeVSbR+Kf6ufYoibzew179SMYXsSbh2my/9sMe9qoyiVLGdf6Sc7H8C0r4A2TNHyI/f878g4yjCCccfN+CEo5S1hwxZazfxW2Mvs4O5Em0VqsFPysZHZMLNUS3MQBFXBK5MJTJu/tzFcTz1YE8ieY4DvzUG02xxpHfLmJF9KGIUCCRd98KR6vfMJoDeRKljKykdYx/KmG9jBNIif987GMJhb0DZZZEs20bKizLwtjMJibmSkgUXaQr6EOZrOdTFu7O7GIhUVbmHGeojFDIF3I8T5Z0LGZtxHe7iO108TVjYXpRF5tb1OvKfj8aA0+jYZhY9ZaGm3b9cQo3plO4/SaHNe/soG4oe1RozWYTQRGszDRNBIVmGAaCIsCXmfgLq3cIqFiLsLMAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ax32.exe ‪Report'" sap:VirtualizedContainerService.HintSize="1144,158" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="73b9987c-981f-404a-8749-cbb7c14e95af" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable DesignTimeRectangle="295, 134, 44, 16" DesignTimeScaleFactor="1" FriendlyName="'ax32.exe ‪Report'" Guid="78b26af9-00ef-45fc-9b7b-f0530ab9b7f3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAAQCAYAAABtPJ3XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACxSURBVEhL7ZNhDsMgCEa5FgfyPJyGy3AX803WtZPNJrrEpVv88dKKBB8GKeeMX2IJz+bfhBWJCFSRtJX3CV6bIdbaO6dDeLxoH0vYaRU1CBNYbFtrArHAqr238TEBH2OVoPfcacJPgXiY/+9fj700EmpUYqXBLWea8ElRv9nSRLzFXb4i3O6DpGXv0sKN+HeFPT4yEh2j0sngDPvBGsRMuHp0Mb/96ArzRuJ6LOG5ZNwAzkYdvF9vNCkAAAAASUVORK5CYII=" InformativeScreenshot="cbe11bd9d6722ea9ba2a4f7ad26c601d.png" ScopeSelectorArgument="&lt;wnd app='ax32.exe' cls='AxTopLevelFrame' title='‪Report Payer Outstanding‬ (‎‪1‬)‎' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="292, 112, 52, 17" FriendlyName="'ax32.exe ‪Report'" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADQAAAARCAYAAACSGY9uAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEDSURBVEhL7VXbEYQwCExbFEQ9VEMz6SXDhbyEeB+nHxn1/NiZSBjZhUVDSkmehFfQ1fG/ghiDINsYCwYQiibGKAHZ5JzBl/cewO8TmslGEghBgOKIRQL3fA6rBKkAIIntWckj5dgQGYXgPJENqwQ5wv2sxVG43NtzRptgaNjsWgkjQo63fJMLuUmLBNk9yqTatDgTK8WdJZW0EVEId5L1brOmz9XJh1WCBmlDvu+N258iwEwrwzXDEp6svLs/iGOCWnHW/bHdR/L7cxtBZXfU67ZgtczYBxPzluv3M2Gfu9ZyGaWg62jt/u7/U0TURd83YCKsFm65Sz8Kd8Ar6Op4mKAkH5SE00dXLrtCAAAAAElFTkSuQmCC" SearchSteps="Image" TargetType="ImageBased" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                  <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[isReadyToSaveFile = False]" DisplayName="While" sap:VirtualizedContainerService.HintSize="1144,889" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_12">
+                                    <ui:InterruptibleWhile.Body>
+                                      <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1062,721" sap2010:WorkflowViewState.IdRef="Sequence_69">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <uix:NCheckState DisplayName="Check App State 'ax32.exe Save As'" sap:VirtualizedContainerService.HintSize="1000,610" sap2010:WorkflowViewState.IdRef="NCheckState_13" ScopeIdentifier="73b9987c-981f-404a-8749-cbb7c14e95af" Version="V3">
+                                          <uix:NCheckState.IfExists>
+                                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="496,383" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,145" sap2010:WorkflowViewState.IdRef="LogMessage_34" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Ready To save file&quot;]" />
+                                              <Assign sap:VirtualizedContainerService.HintSize="434,83" sap2010:WorkflowViewState.IdRef="Assign_21">
+                                                <Assign.To>
+                                                  <OutArgument x:TypeArguments="x:Boolean">[isReadyToSaveFile]</OutArgument>
+                                                </Assign.To>
+                                                <Assign.Value>
+                                                  <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                                </Assign.Value>
+                                              </Assign>
+                                            </Sequence>
+                                          </uix:NCheckState.IfExists>
+                                          <uix:NCheckState.IfNotExists>
+                                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,391" sap2010:WorkflowViewState.IdRef="Sequence_68">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,145" sap2010:WorkflowViewState.IdRef="LogMessage_35" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[&quot;Not Ready To Save File&quot;]" />
+                                              <Delay Duration="00:00:15" sap:VirtualizedContainerService.HintSize="388,91" sap2010:WorkflowViewState.IdRef="Delay_10" />
+                                            </Sequence>
+                                          </uix:NCheckState.IfNotExists>
+                                          <uix:NCheckState.Target>
+                                            <uix:TargetAnchorable DesignTimeRectangle="13, 8, 47, 17" DesignTimeScaleFactor="1" FriendlyName="'ax32.exe Save As'" Guid="ae27d915-ead8-4e9a-a848-b0bfa33f10d0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC8AAAARCAYAAABNV/VxAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEwSURBVEhL7VQBDsMgCPRdPMj3+Bo/08cwQaSgtFmzLN2SXmI2rcJxnCb8Yzzk78JKvmZMKcnIWGX5m6i55crXM3nyW0GwhNu8fJs95YSMGQDLJmtvwpMn1aHgxRgfYSuA0FiP3yuYbFMxN7tEQbi1w07c4g0LJHTdtsVzF8eZI/tRDFGcO2CF6/FHzshVwYXdD8U2pAIlIZE1m6jAPjV7eJpjVR1hUwhhih0hIC8Q5fQ8BRMVkhIjkkPV9j9UXUZAZLYKzXWfxDiz0jH5Bg3GgQZJr1DoWbf/CN2irkAe/hxzaOtRE6YL214XLbTbhwktXjbtpTm/FjZpJ3ammoup6Dlnok4Yg/DCqgoaZb8HaXnW5Nua0Vtn+k73IyKk3XY2jbt4aptfx0P+Ljzk7wHiC3E+X6/fM2cPAAAAAElFTkSuQmCC" InformativeScreenshot="8a61361770200337821210139e8f49e6.png" ScopeSelectorArgument="&lt;wnd app='ax32.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V2" Visibility="Interactive" />
+                                          </uix:NCheckState.Target>
+                                        </uix:NCheckState>
+                                      </Sequence>
+                                    </ui:InterruptibleWhile.Body>
+                                  </ui:InterruptibleWhile>
+                                  <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Save As" sap:VirtualizedContainerService.HintSize="1144,847" sap2010:WorkflowViewState.IdRef="NApplicationCard_16" ScopeGuid="77a8700c-a2d7-4378-a8a3-a701fd3a43f9" Version="V2">
+                                    <uix:NApplicationCard.Body>
+                                      <ActivityAction x:TypeArguments="x:Object">
+                                        <ActivityAction.Argument>
+                                          <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                        </ActivityAction.Argument>
+                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,554" sap2010:WorkflowViewState.IdRef="Sequence_70">
+                                          <sap:WorkflowViewStateService.ViewState>
+                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            </scg:Dictionary>
+                                          </sap:WorkflowViewStateService.ViewState>
+                                          <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'File name'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,219" sap2010:WorkflowViewState.IdRef="NTypeInto_13" ScopeIdentifier="77a8700c-a2d7-4378-a8a3-a701fd3a43f9" Text="[&quot;ax_report_payer_outstanding_&quot; &amp; unit &amp; &quot;_&quot; &amp; DateTime.Now.ToString(&quot;MMMM_yyyy_&quot;) &amp; New Random().Next(1000, 10000).ToString()]" Version="V3">
+                                            <uix:NTypeInto.Target>
+                                              <uix:TargetAnchorable DesignTimeRectangle="136, 369, 599, 17" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'Report Payer'" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;wnd aaname='File name:' cls='ComboBox' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="e2c8f143-f053-486d-9d57-4d0b619e785e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAlsAAAAVCAYAAABxCCtEAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOxSURBVHhe7Zo9bhsxEEZ9nJzBB/IZcoO0OoZOoFJdbiAghYF0bgxXrtxtxL/lzJBcrxamsqDfAz5IMsnhDGFgPnD3YQIAAACAbmC2AAAAADpSNVsPP/8gdFdNv37E/z4AAICxwGyhXQizBQAAo4LZQrsQZgsAAEalYbZeplP8njgd603yvrJ5fUyHQ21eZx3f4/6B5/Pf+rzdyJ1bPKvD2/Tc/dzEftXxUpgtAAAYlQWzJZqlNxfv05NpkH201Kj12OP5Y5pe36bHYl5H+bOQ+f2dDq9rDdcaE3K7UflcPWIu6fb9MFsAADAq68zWXZv10l7/My+nYKyKWz5/W7TGjK7Jt0dN9z6n2/fDbAEAwKisv9mSN0jeXCSSyYhrjnlM3faoNdKwhHWny0ccEVxe8noxNzdx/fvpEtc5/NqKOZK1LNQR8jEGqmmq3D4pj1aO7lMg8kucjrU5tbpE3HN+pNk67+fzm8hJ5rc1RpK51ZvPVu5ha6yv+Y3ZAgCAQVn3zpYyPbKRhmYZGmdco4yMbOrC9FTGcpM38ZX0WPsxopjnmrnI3xmXkIfZx9SR8xFyeVf3CwaiGlf9LvfUZ1uZ0xxz36+k9S6WMoz5vP05VXPYGkPKzXNr0mf6W5zbrFGv4WYLAABG5fObLW+MUhNNvw2+mYo1ce5sbGwMOVasK+NkuTGJjhnMQiLFcGvSvOt3ZQYNjTpmVeoIcmZL7teqx4zFHLSxq+zfrKuxj4urTGErh60xjGJ+yZgVca5jhXk1azBbAAAwKqseI7pbjblZNg2HbcbitqeyZrvZaoypPaT5yflvq0NK3mAJqVhL9dRjh1ujxnk061rYx63Zi9mKc3SNV2G2AADgm7DhBXn3vfaYzfy9MCCi0a42J1YLY655q1srMc8bh/fpJAxYke+spf2v8iZBmjQbxxgyPz/Fa8fORtDMadZlY8nfIaeUQzA6tXVfFcOdR/q041m6Rr0GswUAAKOy0mzFZquavkA8fpMvus+Go1gjY5d7zS+EV9/1KZt4UDA5nsJYxZg23kId9T2i4q1MQtVpxy/XXEQ8VZuKkw2crr9Vl83T/BaxP31BfnOMkFsymvl/RMQpaqyv4QV5AAAYlYbZis32JtnGvS/lx5Zok7wxzYbwq8XNFgAAjMr3MFvOKKRbObRJ/rat4xlitgAAYFQGN1vpEdx+b9z2K/H40tPvVssJswUAAKNSNVsAAAAA8DVgtgAAAAA6gtkCAAAA6AhmCwAAAKAb0/QPNxBoEMgTCzEAAAAASUVORK5CYII=" InformativeScreenshot="59896feec2ecd3978f8f0f867d7a1a39.png" IsResponsive="True" ScopeSelectorArgument="&lt;wnd app='ax32.exe' cls='#32770' title='Save As' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                                <uix:TargetAnchorable.Anchors>
+                                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                                    <uix:Target DesignTimeRectangle="18, 366, 115, 23" ElementType="Text" FriendlyName="'File name'" FullSelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;ctrl name='Explorer Pane' role='pane' /&gt;&lt;ctrl name='Folder Layout Pane' role='pane' /&gt;&lt;ctrl name='Details Pane' role='pane' /&gt;&lt;ctrl name='File name:' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Explorer Pane' cls='DirectUIHWND' /&gt;&lt;ctrl name='Explorer Pane' role='pane' /&gt;&lt;ctrl name='Folder Layout Pane' role='pane' /&gt;&lt;ctrl name='Details Pane' role='pane' /&gt;&lt;ctrl name='File name:' role='text' automationid='' check:text='File name:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHcAAAAbCAYAAABGDxCrAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFISURBVGhD7ZXRrcMgDEWZinkY423AMOzCb9dgAz+cQmtcp2n7F+dWOhIQbBCnmNBaI+ATyHUM5Dok/N3uWB/BuWGx/INch0CuYyDXMZDrGMh1zAXlFkohUBDEXKnVTDFEynXOme3zclG5R+Ig96RArmP2xMlxNWcr2bOMJypLHDPm57SW+vG9pOcTEFJZY8ozdyqNao5mDnMPpa8XM9U5R4E3t8OHui9Xtjv9QJdDlzmnOD70d3+CR94eM+VsMULokmNnDzwHciXqoMxx0V5uzOBx+6xYoz/E3THWOMrx0R5egVxzXB+sdQslR2JmfKUcjTW+yvE5kGuO67Z6/17QOUVfls5NkrXGUZ/bxh5QljX6EK1xNUeXxa/KMt/WERcTpV9uLvetPUDudYFcx0CuYyDXMZDrGMh1DOQ6huVuWB+BDyDXLY3+ARXyTt1LguG5AAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                                                  </scg:List>
+                                                </uix:TargetAnchorable.Anchors>
+                                              </uix:TargetAnchorable>
+                                            </uix:NTypeInto.Target>
+                                          </uix:NTypeInto>
+                                          <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="388,180" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_8" InteractionMode="SameAsCard" ScopeIdentifier="77a8700c-a2d7-4378-a8a3-a701fd3a43f9" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+                                        </Sequence>
+                                      </ActivityAction>
+                                    </uix:NApplicationCard.Body>
+                                    <uix:NApplicationCard.TargetApp>
+                                      <uix:TargetApp Area="387, 419, 768, 480" FilePath="C:\Program Files (x86)\Microsoft Dynamics AX\60\Client\Bin\ax32.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAK1SURBVFhHxZVrSJNRHMatoA9G0Zc+RVBG0I2oIFKK6ksUCrWZpN0mdjO66irNtObSljRIrSzSFLFILaXoIl2lVMQ0K60o1Mgv2QVWbWlWbnvae3ZeX993/+VG7fWBH+w855z//2Gcc96goIkaDCmkqSakqSakqSak6QMRGzMwb8U+cs4vSNMHjp2pRKg2iZzzC9L0geYXb4cuQMiieAjyFsCvYKQ5CIbsUq8BZocnwmrr8fC9Qpp/YXiIFu2dXV4DlN2ohfV7AAMIp1+UMsB8TRKcTmdgAzxseMnbywMI/8yT1g7mKwMET4vGtbuPZV4/pOmFJTFprIGogQGSs0q4Kw8wanoMqutbmS96MkiTYNgkLRpb2lkhUWKAsMhk9Nnt3JUCjJurk+0ZWK8f0iTQ6XN5GUlCgNEz1uD9Rwt33BICBE9djbZ37sMqiqrrU4Cxs9ah69MXXkbSwqgUbE87x0eShADCnFJUbZ8CFFdU8xJyLd1ggK37Bx9JEgIsjk7lI0lU7UEDLI818u2eCniA8aGb8Nli5ds9FdAAI6dEob75Dd/qqd99dixYdYA1U+q/BMgrqeLb3Prmet8rquphzr/K7nzikUJotppc18/BV0j65wD6zCK+BbhT88z17a+ANj4L0TvNSMgohDG3HCeLb+Lo6StIzynD4ROXkOn6bcqrhDGnHNtSz2JC2GZeQRLVyyNA7F73fW9saWNXbH1CNnYZCnCruok9Kh2dH2D5akPvz19snT9S9mIoDYfD6bp2D7DjUD5Kr9eiruk1ahpfud7yBuxOL2CBwuMy2LMssnKLCXH7T+Gg+SKKLt9nZ6e7p5e3laTsxVAatx89RcrxC1imM2LMzLWyOX8YMTkScyL02GM8j3t1z1kgap3XQ6gapKkmpKkmpKkmpKkmpKkmpKkaGvwBfQHKDZEu1CsAAAAASUVORK5CYII=" InformativeScreenshot="f18bdfef9c31130c443c6102e6c3c678.png" Selector="&lt;wnd app='ax32.exe' cls='#32770' title='Save As' /&gt;" Title="Save As" />
+                                    </uix:NApplicationCard.TargetApp>
+                                  </uix:NApplicationCard>
+                                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Close'" sap:VirtualizedContainerService.HintSize="1144,158" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="73b9987c-981f-404a-8749-cbb7c14e95af" Version="V3">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable DesignTimeRectangle="986, 1, 47, 30" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Close'" FullSelectorArgument="&lt;ctrl name='Close' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Close' role='push button' automationid='' check:text='Close' /&gt;" Guid="bea420f3-8a3d-45bf-bf88-b648bbc7cc29" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADMAAAAhCAYAAAB0v5O6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAClSURBVFhH7dVNDkUwFIbhM5FrCfZre53bhSnp5LhHCEIEcZqv8r1J46cGfRJKqrrR3EeMcRyimUcMasSgRgxqxKDmihERDSFMV/tszp55K1eMLbb4lYegs7mnub9mR4v2gFhJvpn14r0gVrINYEZ4QSxi7jZD7Lg+fztuAFc7W7QHyBXzqZ9m6ohBjRjUiEGNGNSIQW2DaTvVnMcW0/9vZjwWTNQB3IRbf3SwapUAAAAASUVORK5CYII=" InformativeScreenshot="cf7b969aa06395565fd2d25ec5413366.png" ScopeSelectorArgument="&lt;wnd app='ax32.exe' cls='AxTopLevelFrame' title='‪Report Payer Outstanding‬ (‎‪1‬)‎' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="8, 8, 22, 22" FriendlyName="'System'" FullSelectorArgument="&lt;ctrl automationid='MenuBar' /&gt;&lt;ctrl name='System' role='menu item' /&gt;" FuzzySelectorArgument="&lt;ctrl automationid='MenuBar' /&gt;&lt;ctrl name='System' role='menu item' automationid='' check:text='System' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFUSURBVEhLY/j169d/iebr/2kNiLaIQd6fMjxoLSIVDA2L4JoJYBS15FqEDEB8ZqWg/x3T12KoAdFgTC2LZCyT/3/++h2ujkkxEC4HxtSyyCqo/P+Pn7/AbB7tiP/MykFwOTCmhkUihrH/py/Z8f/v339gubDsbjB94MQVuD6qJAZ9z4L/Zy/f/f/7z9//CSWT///7B1Sj4P9f3joVoY5Si7Rdc/9PXrj1/89fv///AVqUWDoFbBELNYIOBlhVgv+7RDeA2TCLksungi2KK5oIFifbImRs6F34/+HTV2D5r99+/H/7/vN/j/gmsEXR+f1gcbh6ci3Krp39/wswOV+4fv//so2H/5d2LPwvZBDzn1Mj7P/0xdv/J5dNQdVHjkUBae3/e+ds/O+X0oYijozlrFL+59TNRohREnQkYWItohSMWkQ2GLWIbEB/i959/09D/P8/ALMMpGUfFVAOAAAAAElFTkSuQmCC" SearchSteps="Selector, FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                  </uix:NClick>
+                                </Sequence>
+                              </ActivityAction>
+                            </uix:NApplicationCard.Body>
+                            <uix:NApplicationCard.TargetApp>
+                              <uix:TargetApp Area="3, 2, 1040, 865" FilePath="C:\Program Files (x86)\Microsoft Dynamics AX\60\Client\Bin\ax32.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKrSURBVFhHxZVtSBRRFIbtRxB9/wr6ERIEkZoFkhD9drMINwjJzKxoI8LUvouIaDMUiqKQTYwiSIhIg8IwRIyykFwKU9raUFc33Vx1Te0LC7e3OWd3hjuXnWXL3emFB+a898w9Z+7M3JuUlGzFfyWiaSYRTTOJaJqJbCRSci1GNhIpuRYjG4mUXIuRDcPEaWI4r2wYJk4Tw3llQ0w0UrRxdezz+Fd0uvt0ueq1DtkQE40k5htB8vqGdbE4riEbYqKRoo2LYwlvIBok01fAUmDHgpX52pjpK3Crthnz07bxNcnUFUizlOBZmwvzUkMNqNCKzFy2hXNEX0M2xEQjifkqc1Zsxfcfk9orUCl31GHW8lzD++KyAvT0e447EAz+1l4BsWStDe+7BxLXgMqMpZvh7hnA1FQQC9O3a/7d+ufo6vuE2crqjE18Yy9j0xFtnNEFCmIBI4n5RI6tnH1qQF2BDbvK2Ovx+vm7IN92woGnL9/q79cFCiTZiwY9PW25qqjQ3JQ8DI9OcDwUGGcvr/gSxy1Ol34OXaBAkr1o0FOJWpSxE4WHr4ajUAMpWcV4866X45gaiEUV1+5zMTp0RKUqxVpfu8NRqIE1OUdjb+BvqGto5UlFmdbAvlNVPKGs9OxSODu6whH4W8i0HotvA/QrTf78xRM+an6F85W1sO6tgGWHnRt40tqpvRqffxSrNx6KXwOLM3fzslKBB41t2H+6GkVnrqOs8h6qah7DcbsBV27W4+SFGuSXXsb6wnPc8AePLz4NPGxywvPRj+o7jWh60YF2lwe9/UPKwTOibDqDvPF0ewfRPxhAYOwLNzsS/iVJLcp5oZtTF8TAAeVpc4suIqvgLG/BtN0S8hlAMfnJ62xYlX2QNya6t8R+Q5f3zx9h3IhomklE0zSs+APXi8fPz7/RZwAAAABJRU5ErkJggg==" InformativeScreenshot="b5f3291e78231d791fe88afd635b8f77.png" Selector="&lt;wnd app='ax32.exe' cls='AxTopLevelFrame' title='‪Report Payer Outstanding‬ (‎‪1‬)‎' /&gt;" Title="‪Report Payer Outstanding‬ (‎‪1‬)‎" />
+                            </uix:NApplicationCard.TargetApp>
+                          </uix:NApplicationCard>
+                        </Sequence>
+                      </If.Else>
+                    </If>
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" From="{x:Null}" MailMessage="{x:Null}" Name="{x:Null}" ReplyTo="{x:Null}" Result="{x:Null}" SecurePassword="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" Body="FAILED " DisplayName="Send SMTP Mail Message" Email="Admin-noreply@siloamhospitals.com" EnableSSL="True" sap:VirtualizedContainerService.HintSize="334,146" sap2010:WorkflowViewState.IdRef="SendMail_3" IgnoreCRL="False" IsBodyHtml="False" Password="jzcygbckrrqstmkt" Port="587" SecureConnection="Auto" Server="smtp.office365.com" Subject="RPA for generate repport failed" To="hafidz.tafsani@bithealth.co.id">
+              <ui:SendMail.Files>
+                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+              </ui:SendMail.Files>
+            </ui:SendMail>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="34, 48, 1097, 589" FilePath="C:\Program Files (x86)\Microsoft Dynamics AX\60\Client\Bin\ax32.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKzSURBVFhHxZVbSBRRHMYt6MEoeukpgjKCbkQFkVJUL1Eo1K5JazfFbkZXtdJMS9zWTBJSK4s0RSxSS0m6SFcplcXWrLSiUCNfsgtspWlW7u7XzNkzTTP7n9yldvzgB3u+c87//7GccyYgYIIBQwpp6glp6glp6glpekHYBgvmLt9LzvkEaXrB0dNVCDYmknM+QZpe0Pzs9dAFCFoYC1FaAXwKRpqDkJZTphlgVmg8unv6PHxNSPMvDAsyor2zSzNA+bV6dH/1YwDx9EtSB5hnSITL5fJvgPuNz3l7ZQDxn3nU2sF8dYDAqSZU336o8H5DmhosjkxlDST9GSApq5S7ygAjp0Wi1trKfMlTQJoUE42wtbSzQpKkACHhSRhwOLgrBxg7J0qxR1FPgjQJohLyeBlZYoBR01fj7Xs7d9wSAwROWYW2N+7DKomq61WAMTPXouvDJ15G1oKIZGxLPctHssQA4pxaVG2vApRU1vISSi1Zn4ae3m98JEsMsMiUwkeyqNqDBlgWbebbPeX3AOOCN+KjvZtv95RfA4yYHAFr8yu+1VM/BxyYv3I/a6bWfwmQX1rDt7n1RXjfK2usyC64wu58/OEiGLZkCtfPyVfI+ucACRnFfAtwq+6J8O2vhDE2C6Yd2YizFMGcV4ETJddx5NRlpOeW49Dxi8gQfmfmV8GcW4GtKWcwPmQTryCL6uURIHqP+77bWtrYFVsXl4OdaYW4UdvEHpWOznewf+5B//cfbJ0vUvdiqA2n0yVcu3vYfrAAZVfr0dD0EnW2F8Jb3ohd6YUsUGiMhT3LEis2ZyJm30kcyL6A4kt32dnp7evnbWWpezHUxs0Hj5F87DyWRpkxesYaxZwvDJ8UjtlhCdhtPoc7DU9ZIGqd5iHUDdLUE9LUE9LUE9LUE9LUE9LUDQN+Aeckw3qvVpVPAAAAAElFTkSuQmCC" InformativeScreenshot="4a2f736f04bba1538770ef5ed674c157.png" Selector="&lt;wnd app='ax32.exe' cls='AxMainFrame' title='‪Microsoft Dynamics AX‬ - ‎‪PT Siloam International‬ [‎‪HO-ERPTE*' /&gt;" Title="‪Microsoft Dynamics AX‬ - ‎‪PT Siloam International‬ [‎‪HO-ERPTE*" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
