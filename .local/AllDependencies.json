@@ -20917,15 +20917,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\rpa.test\\.nuget\\packages\\": {}
+    "C:\\Users\\rpa.admin-noreply\\.nuget\\packages\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "generate ax report",
       "projectName": "generate ax report",
-      "projectPath": "C:\\Users\\rpa.test\\Documents\\UiPath\\generate ax report\\.local",
-      "packagesPath": "C:\\Users\\rpa.test\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rpa.test\\Documents\\UiPath\\generate ax report\\.local"
+      "projectPath": "C:\\RPAAXCMS\\.local",
+      "packagesPath": "C:\\Users\\rpa.admin-noreply\\.nuget\\packages\\",
+      "outputPath": "C:\\RPAAXCMS\\.local"
     },
     "frameworks": {
       "net6.0-windows7.0": {
